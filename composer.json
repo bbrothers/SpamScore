@@ -1,0 +1,34 @@
+{
+  "name": "bbrothers/spamscore",
+  "description": "SpamAssassin API Gateway",
+  "keywords": [
+    "spamassassin",
+    "email",
+    "spam"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brad Brothers",
+      "email": "brad@bradbrothers.ca"
+    }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "guzzlehttp/guzzle": "6.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "SpamScore\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\SpamScore\\": "tests/SpamScore/"
+    }
+  }
+}
